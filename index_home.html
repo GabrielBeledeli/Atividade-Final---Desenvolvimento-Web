@@ -6,6 +6,7 @@
     <meta name="description" content="PneusMax - A melhor loja de pneus para você">
     <title>PneusMax</title>
     <link rel="stylesheet" href="css/style_home.css">
+    <link rel="stylesheet" href="css/style_home_2.css">
     <link rel="icon" href="assets/icon1.png" type="image/png">
 </head>
 <body>
@@ -15,13 +16,19 @@
             <!-- Logo à esquerda -->
             <img src="assets/logo1.png" alt="PneusMax" class="logo">
 
+            <!-- Botão hambúrguer para dispositivos móveis -->
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+
             <!-- Menu de navegação principal -->
             <nav class="main-menu">
                 <ul>
                     <li><a href="#inicio">Início</a></li>
                     <li><a href="#produtos">Produtos</a></li>
-                    <li><a href="#promocoes">Promoções</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
@@ -30,10 +37,28 @@
             <div class="user-actions">
                 <a href="#entrar">Entrar</a>
                 <a href="#criar-conta">Criar conta</a>
-                <a href="#favoritos">Favoritos</a>
                 <a href="#carrinho">Carrinho</a>
             </div>
         </div>
+
+        <!-- Menu de navegação para dispositivos móveis -->
+        <nav id="mobileMenu" class="mobile-menu">
+            <ul>
+                <hr>
+                <li><a href="#inicio">Início</a></li>
+                <hr>
+                <li><a href="#produtos">Produtos</a></li>
+                <hr>
+                <li><a href="#contato">Contato</a></li>
+                <hr>
+                <li><a href="#entrar">Entrar</a></li>
+                <hr>
+                <li><a href="#criar-conta">Criar conta</a></li>
+                <hr>
+                <li><a href="#carrinho">Carrinho</a></li>
+                <hr>
+            </ul>
+        </nav>
     </header>
 
     <!-- Carrossel de imagens -->
