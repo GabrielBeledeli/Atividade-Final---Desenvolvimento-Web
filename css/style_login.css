@@ -1,4 +1,3 @@
-
 /* Login e Registro */
 .container {
     width: 370px;
@@ -28,7 +27,7 @@ input {
 /* Esqueceu a senha */
 .forgot-password {
     display: block;
-    color: #CF291D;
+    color: #CF291D; 
     text-decoration: none;
     margin-top: 10px;
 }
@@ -59,8 +58,8 @@ input {
 }
 
 .google-login {
-    background-color: #CF291D;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
 }
 
 .apple-login {
@@ -75,11 +74,11 @@ input {
 }
 
 .google-login:hover {
-    background-color: #A32117;
+    background-color: #CF291D;
 }
 
 .apple-login:hover {
-    background-color: #333;
+    background-color: #CF291D;
 }
 
 /* Seção de registro */
@@ -91,7 +90,7 @@ input {
     color: white;
 }
 
-.register-btn {
+.register-btn, .btn_entrar {
     display: inline-block;
     background-color: #CF291D;
     color: white;
@@ -102,7 +101,7 @@ input {
     transition: background-color 0.3s ease-in-out;
 }
 
-.register-btn:hover {
+.register-btn:hover, .btn_entrar:hover {
     background-color: #A32117;
 }
 @media (max-width: 768px) {
