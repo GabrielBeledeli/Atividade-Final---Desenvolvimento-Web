@@ -1,19 +1,4 @@
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #1D1D1D;
-    background-color: #ECECEC;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
 /* Login e Registro */
 .container {
     width: 370px;
@@ -38,28 +23,6 @@ input {
     border-radius: 5px;
     background: #222;
     color: white;
-}
-
-/* Ajuste dos botões */
-button {
-    width: 100%;
-    padding: 12px;
-    margin: 12px 0;
-    background-color: #CF291D;
-    color: #FFFFFF;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    transition: background-color 0.3s ease-in-out;
-}
-
-button:hover {
-    background-color: #A32117;
 }
 
 /* Esqueceu a senha */
