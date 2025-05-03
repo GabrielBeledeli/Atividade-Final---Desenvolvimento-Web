@@ -1,0 +1,152 @@
+.brand-carousel-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #ECECEC;
+  }
+  
+  .brand-carousel-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #1D1D1D;
+  }
+  
+  .brand-carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+  }
+  
+  .brand-carousel-wrapper {
+    overflow: hidden;
+    width: 1090px; /* 4 imagens de 250px + 3 gaps de 30px */
+  }
+  
+  /* Default (desktop): mostra carrossel horizontal */
+  .brand-carousel {
+    display: flex;
+    gap: 30px;
+    transition: transform 0.5s ease-in-out;
+    flex-wrap: nowrap;
+  }
+  .brand-carousel img {
+    width: 250px;
+    height: 95px;
+    object-fit: contain;
+    border-radius: 8px;
+    background-color: #ECECEC;
+    padding: 10px;
+    flex-shrink: 0;
+  }
+  
+  .brand-arrow {
+    background-color: transparent;
+    border: none;
+    font-size: 32px;
+    cursor: pointer;
+    padding: 0 15px;
+    color: #1D1D1D;
+    z-index: 2;
+  }
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+.indicator {
+    width: 50px;
+    height: 8px;
+    background-color: #ccc; /* Cinza para o estado inativo */
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.indicator.active {
+    background-color: red; /* Vermelho para o estado ativo */
+}
+/* 📱 Mobile até 768px */
+@media (max-width: 768px) {
+    .brand-carousel-wrapper {
+      width: 540px; /* 2 imagens de 250px + 1 gap de 30px */
+    }
+  
+    .brand-carousel {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .brand-carousel img {
+      width: 250px;
+    }
+  }
+  /* 📱 Mobile até 768px */
+@media (max-width: 768px) {
+    .brand-carousel-wrapper {
+      width: 540px; /* 2 imagens de 250px + 1 gap de 30px */
+    }
+  
+    .brand-carousel {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .brand-carousel img {
+      width: 250px;
+    }
+  }
+  
+  /* 💻 Tablet médio de 769px a 1024px */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .brand-carousel-wrapper {
+      width: 540px; /* 2 imagens de 250px + 1 gap de 30px */
+    }
+  
+    .brand-carousel {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .brand-carousel img {
+      width: 250px;
+    }
+  }
+  
+  /* 📱 Mobile e 💻 Tablet: layout em grid 2x2 */
+  @media (max-width: 1024px) {
+    .brand-carousel {
+      display: grid !important;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto auto;
+      gap: 20px;
+      justify-content: center;
+      transform: none !important; /* Remove o efeito do translateX */
+    }
+  
+    .brand-carousel-wrapper {
+      overflow: hidden;
+      width: auto;
+    }
+  
+    .brand-carousel img {
+      width: 100%;
+      max-width: 160px;
+      margin: auto;
+    }
+  
+    /* Oculta todas as imagens inicialmente */
+    .brand-carousel img {
+      display: none;
+    }
+  
+    /* Mostra 4 imagens por vez (2x2) com classe "visible" */
+    .brand-carousel img.visible {
+      display: block;
+    }
+  }
+  
+  
