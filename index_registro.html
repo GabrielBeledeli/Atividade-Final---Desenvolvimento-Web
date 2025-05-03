@@ -3,28 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - PneusMAX</title>
+    <title>Registro - PneusMAX</title>
     <link rel="icon" type="image/png" href="./assets/icon2.png">
-    <link rel="stylesheet" href="./css/style_login.css">
+    <link rel="stylesheet" href="./css/style_registro.css">
     <link rel="stylesheet" href="./css/style_home.css">
 </head>
-<body style="background: url('./assets/car-login.jpg') no-repeat center center fixed; background-size: cover;">
+<body style="background: url('./assets/carro-registro.jpg') no-repeat center center fixed; background-size: cover;">
 
     <!-- HEADER -->
     <header>
         <div class="header-container">
-            <!-- Logo à esquerda -->
             <img src="./assets/logo1.png" alt="PneusMax" class="logo" href="./index_home.html">
 
-            <!-- Botão hambúrguer para dispositivos móveis -->
             <button class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-            
 
-            <!-- Menu de navegação principal -->
             <nav class="main-menu">
                 <ul>
                     <li><a href="./index_home.html">Início</a></li>
@@ -33,13 +29,13 @@
                 </ul>
             </nav>
 
-            <!-- Links de conta e ações do usuário -->
             <div class="user-actions">
                 <a href="./index_login.html">Entrar</a>
-                <a href="/index_registro.html">Criar conta</a>
+                <a href="./index_registro.html">Criar conta</a>
                 <a href="#carrinho">Carrinho</a>
             </div>
         </div>
+        <!-- Menu de navegação para dispositivos móveis -->
         <nav id="mobileMenu" class="mobile-menu">
             <ul>
                 <hr>
@@ -51,35 +47,40 @@
                 <hr>
                 <li><a href="./index_login.html">Entrar</a></li>
                 <hr>
-                <li><a href="./index_registro.html">Criar conta</a></li>
+                <li><a href="/index_registro.html">Criar conta</a></li>
                 <hr>
                 <li><a href="#carrinho">Carrinho</a></li>
                 <hr>
             </ul>
         </nav>
     </header>
+
+    <!-- FORMULÁRIO DE REGISTRO -->
     <div class="container">
-        <h2>Login - PneusMAX</h2>
-        <form id="loginForm">
-            <input type="text" id="username" placeholder="Nome de usuário">
+        <h2>Registro - PneusMAX</h2>
+        <form id="registroForm">
+            <input type="text" id="fullname" placeholder="Nome completo">
+            <input type="email" id="email" placeholder="E-mail">
             <input type="password" id="password" placeholder="Senha">
-            <button type="button" onclick="validarLogin()">Entrar</button>
-            <p id="mensagem"></p>
-            <a href="#" class="forgot-password">Esqueceu a senha?</a>
+            <input type="password" id="confirmPassword" placeholder="Confirmar senha">
+            <button type="button" id="registrarBtn">Registrar-se</button>
         </form>
-        
-        <div class="social-login">
-            <button class="google-login">
-                <img src="./assets/google-icon.png" alt="Google"> Login com Google
+
+        <!-- Div para exibir mensagens -->
+        <div id="mensagem" style="margin-top: 10px; font-size: 14px;"></div>
+
+        <div class="social-register">
+            <button class="google-register">
+                <img src="./assets/google-icon.png" alt="Google"> Registrar-se com Google
             </button>
-            <button class="apple-login">
-                <img src="./assets/apple-icon.png" alt="Apple"> Login com Apple
+            <button class="apple-register">
+                <img src="./assets/apple-icon.png" alt="Apple"> Registrar-se com Apple
             </button>
         </div>
 
-        <div class="register">
-            <p>Não tem uma conta?</p>
-            <a href="/index_registro.html" class="register-btn">Registrar-se</a>
+        <div class="login">
+            <p>Já tem uma conta?</p>
+            <a href="./index_login.html" class="login-btn">Entrar</a>
         </div>
     </div>
 
@@ -95,6 +96,6 @@
     </footer>
 
     <script src="./js/script_home.js"></script>
-    <script src="./js/script_login.js"></script>
+    <script src="./js/script_registro.js"></script>
 </body>
 </html>
