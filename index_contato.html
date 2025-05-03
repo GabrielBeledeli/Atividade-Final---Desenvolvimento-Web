@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PneusMax - A melhor loja de pneus para você">
+    <title>PneusMax</title>
+    <link rel="stylesheet" href="css/style_home.css">
+    <link rel="stylesheet" href="css/style_contato.css">
+    <link rel="icon" href="assets/icon1.png" type="image/png">
+</head>
+<body>
+    <!-- Header fixo -->
+    <header>
+        <div class="header-container">
+            <!-- Logo à esquerda -->
+            <img src="assets/logo1.png" alt="PneusMax" class="logo">
+
+            <!-- Botão hambúrguer para dispositivos móveis -->
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+
+            <!-- Menu de navegação principal -->
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="./index_home.html">Início</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="index_contato.html">Contato</a></li>
+                </ul>
+            </nav>
+
+            <!-- Links de conta e ações do usuário -->
+            <div class="user-actions">
+                <a href="./index_login.html">Entrar</a>
+                <a href="#criar-conta">Criar conta</a>
+                <a href="#carrinho">Carrinho</a>
+            </div>
+        </div>
+
+        <!-- Menu de navegação para dispositivos móveis -->
+        <nav id="mobileMenu" class="mobile-menu">
+            <ul>
+                <hr>
+                <li><a href="./index_home.html">Início</a></li>
+                <hr>
+                <li><a href="#produtos">Produtos</a></li>
+                <hr>
+                <li><a href="index_contato.html">Contato</a></li>
+                <hr>
+                <li><a href="./index_login.html">Entrar</a></li>
+                <hr>
+                <li><a href="#criar-conta">Criar conta</a></li>
+                <hr>
+                <li><a href="#carrinho">Carrinho</a></li>
+                <hr>
+            </ul>
+        </nav>
+    </header>
+    <main class="contato" id="contato">
+        <!-- Fale Conosco -->
+        <section class="fale-conosco">
+            <h2>Fale Conosco</h2>
+            <p>Estamos aqui para te ajudar. Escolha o canal mais fácil para você entrar em contato.</p>
+            <div class="canais-atendimento">
+                <div>
+                    <img src="assets/whatsapp2.png" alt="Whatsapp">
+                    <p><strong>WhatsApp:</strong> (11) 91234-5678</p>
+                </div>
+                <div>
+                    <img src="assets/email.png" alt="E-mail">
+                    <p><strong>Email:</strong> atendimento@pneusmax.com.br</p>
+                </div>
+                <div>
+                    <img src="assets/telefone.png" alt="Telefone">
+                    <p><strong>Telefone:</strong> (11) 3234-5678</p>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Formulário de Contato -->
+        <section class="formulario-contato">
+            <h2>Envie uma Mensagem</h2>
+            <form action="#" method="post">
+                <input type="text" name="nome" placeholder="Seu nome" required>
+                <input type="email" name="email" placeholder="Seu e-mail" required>
+                <textarea name="mensagem" placeholder="Digite sua mensagem aqui..." required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    
+        <!-- Problemas comuns e soluções -->
+        <section class="faq">
+            <h2>Dúvidas Frequentes</h2>
+            <details>
+                <summary>Meu pneu está desgastando rápido. O que fazer?</summary>
+                <p>Verifique o alinhamento e calibragem. Faça inspeções a cada 10.000 km.</p>
+            </details>
+            <details>
+                <summary>Qual é o pneu ideal para meu carro?</summary>
+                <p>Use nosso buscador por modelo de carro ou peça ajuda no WhatsApp.</p>
+            </details>
+            <details>
+                <summary>Vocês entregam para todo o Brasil?</summary>
+                <p>Sim! A PneusMax realiza entregas em todas as regiões com rastreamento em tempo real.</p>
+            </details>
+        </section>
+    
+        <!-- Sobre a empresa -->
+        <section class="sobre">
+            <h2>Sobre a PneusMax</h2>
+            <p>Somos especialistas em pneus. A PneusMax oferece as melhores marcas com os menores preços. Nosso compromisso é com sua segurança, conforto e economia.</p>
+            <p>Com um atendimento 100% online e entrega rápida em todo o Brasil, garantimos uma experiência de compra moderna, segura e eficiente.</p>
+        </section>
+    
+        <!-- Mapa (opcional) -->
+        <section class="mapa">
+            <h2>Onde Estamos</h2>
+            <p>Nosso centro de distribuição:</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28878.47147837316!2d-51.002541900362665!3d-25.20966512295962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e8eaf8aadb8cbd%3A0x89cef80826b8c65f!2sPrudent%C3%B3polis%2C%20State%20of%20Paran%C3%A1%2C%2084400-000!5e0!3m2!1sen!2sbr!4v1746243034257!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+    
+   <!-- Footer -->
+   <footer>
+    <div class="footer-container">
+        <div class="social-icons">
+            <a href="#"><img src="assets/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="assets/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="assets/whatsapp.png" alt="Whatsapp"></a>
+        </div>
+        <p>© 2025 PneusMax. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+<script src="js/script_home.js"></script>
+</body>
+</html>

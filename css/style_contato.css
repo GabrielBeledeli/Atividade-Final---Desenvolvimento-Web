@@ -1,0 +1,164 @@
+/* ===== CONTATO - Estilo Geral ===== */
+.contato {
+    padding: 120px 20px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #1D1D1D;
+}
+
+.contato h2 {
+    color: #CF291D;
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+.contato p, .contato li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #1D1D1D;
+}
+
+/* ===== FALE CONOSCO ===== */
+.fale-conosco {
+    margin-bottom: 40px;
+    padding: 20px; /* Espaçamento interno */
+    background-color: #F9F9F9; /* Cor de fundo */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* Sombra leve */
+}
+
+.fale-conosco .canais-atendimento {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.canais-atendimento div {
+    flex: 1 1 200px; /* Flexível com largura mínima */
+    background-color: #FFFFFF;
+    border-left: 5px solid #CF291D;
+    padding: 20px; /* Aumentado para mais espaçamento interno */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Aumentado para mais espaço entre os itens */
+    min-height: 140px; /* Aumentado para mais altura */
+    max-height: 220px; /* Ajustado para evitar elementos gigantes */
+    overflow: hidden; /* Evita que o conteúdo extrapole */
+    text-align: left; /* Alinhamento do texto */
+}
+
+/* ===== Canais de Atendimento - Hover ===== */
+.canais-atendimento div:hover {
+    background-color: #F5F5F5; /* Cor de fundo ao passar o mouse */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra mais intensa */
+    transform: translateY(-5px); /* Elevação sutil */
+    transition: all 0.3s ease; /* Transição suave */
+}
+
+.canais-atendimento img {
+    width: 32px; /* Aumentado para destacar a imagem */
+    height: 32px;
+    flex-shrink: 0; /* Evita que a imagem seja redimensionada */
+}
+
+.canais-atendimento p {
+    margin: 0; /* Remove margens extras */
+    font-size: 16px; /* Aumentado para melhorar a legibilidade */
+    color: #333; /* Cor do texto */
+}
+
+/* ===== FORMULÁRIO ===== */
+.formulario-contato form {
+    background-color: #FFFFFF;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.formulario-contato input,
+.formulario-contato textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #CCC;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.formulario-contato button {
+    background-color: #CF291D;
+    color: #FFFFFF;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.formulario-contato button:hover {
+    background-color: #a11f16;
+}
+
+/* ===== FAQ (Problemas comuns) ===== */
+.faq details {
+    background-color: #FFFFFF;
+    border-left: 5px solid #CF291D;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.faq summary {
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    color: #1D1D1D;
+}
+
+.faq p {
+    margin-top: 10px;
+    color: #1D1D1D;
+}
+
+/* ===== SOBRE A EMPRESA ===== */
+.sobre {
+    background-color: #FFFFFF;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    margin-top: 40px;
+}
+
+/* ===== MAPA ===== */
+.mapa {
+    margin-top: 40px;
+}
+
+.mapa iframe {
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+
+@media (max-width: 1044px) {
+    .fale-conosco {
+        padding: 15px; /* Reduzido para telas menores */
+    }
+
+    .canais-atendimento {
+        flex-direction: column; /* Empilha os elementos verticalmente */
+    }
+
+    .canais-atendimento div {
+        flex: 1 1 auto; /* Ajusta a largura automaticamente */
+        min-height: 120px; /* Altura mínima ajustada */
+        padding: 15px; /* Espaçamento interno ajustado */
+    }
+}
