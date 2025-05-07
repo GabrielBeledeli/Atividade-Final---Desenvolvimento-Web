@@ -4,34 +4,34 @@ const images = document.querySelectorAll('.carousel img');
 const totalSlides = images.length / 2; // só os originais, os outros são clones
 
 function showNextImage() {
-  currentIndex++;
+    currentIndex++;
 
-  carousel.style.transition = 'transform 0.6s ease-in-out';
-  carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+    carousel.style.transition = 'transform 0.6s ease-in-out';
+    carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
 
-  // Quando chega no clone do último slide original
-  if (currentIndex === totalSlides) {
-    setTimeout(() => {
-      carousel.style.transition = 'none'; // remove animação
-      carousel.style.transform = `translateX(0%)`; // volta para o início real
-      currentIndex = 0;
-    }, 600); // espera a transição terminar antes de "teletransportar"
-  }
+    // Quando chega no clone do último slide original
+    if (currentIndex === totalSlides) {
+        setTimeout(() => {
+            carousel.style.transition = 'none'; // remove animação
+            carousel.style.transform = `translateX(0%)`; // volta para o início real
+            currentIndex = 0;
+        }, 600); // espera a transição terminar antes de "teletransportar"
+    }
 }
 
 function initCarousel() {
-  setInterval(showNextImage, 10000);
+    setInterval(showNextImage, 10000);
 }
 
 document.addEventListener('DOMContentLoaded', initCarousel);
 
 document.addEventListener("DOMContentLoaded", function () {
-  const hamburger = document.getElementById("hamburger");
-  const mobileMenu = document.getElementById("mobileMenu");
+    const hamburger = document.getElementById("hamburger");
+    const mobileMenu = document.getElementById("mobileMenu");
 
-  hamburger.addEventListener("click", function () {
-      mobileMenu.classList.toggle("show");
-  });
+    hamburger.addEventListener("click", function () {
+        mobileMenu.classList.toggle("show");
+    });
 });
 
 
@@ -127,29 +127,29 @@ let comentarioSlideIndex = 0;
 
 // Função para calcular o número de cards por slide com base no tamanho da tela
 function calcularCardsPorSlide() {
-  const largura = window.innerWidth;
-  if (largura <= 768) return 1; // Telas pequenas
-  if (largura <= 1024) return 2; // Telas médias
-  return 3; // Telas grandes
+    const largura = window.innerWidth;
+    if (largura <= 768) return 1; // Telas pequenas
+    if (largura <= 1024) return 2; // Telas médias
+    return 3; // Telas grandes
 }
 
 // Atualiza o carrossel de comentários
 function rotacionarComentarios() {
-  const cardsPorSlide = calcularCardsPorSlide();
-  const totalSlides = Math.ceil(comentarioCards.length / cardsPorSlide);
+    const cardsPorSlide = calcularCardsPorSlide();
+    const totalSlides = Math.ceil(comentarioCards.length / cardsPorSlide);
 
-  // Atualiza o índice do slide
-  comentarioSlideIndex = (comentarioSlideIndex + 1) % totalSlides;
+    // Atualiza o índice do slide
+    comentarioSlideIndex = (comentarioSlideIndex + 1) % totalSlides;
 
-  // Calcula o deslocamento correto
-  const offset = -(comentarioSlideIndex * 100);
-  comentarioCarousel.style.transform = `translateX(${offset}%)`;
+    // Calcula o deslocamento correto
+    const offset = -(comentarioSlideIndex * 100);
+    comentarioCarousel.style.transform = `translateX(${offset}%)`;
 }
 
 // Garante que o carrossel atualize corretamente ao redimensionar
 window.addEventListener('resize', () => {
-  comentarioSlideIndex = 0; // Reinicia o índice ao redimensionar
-  rotacionarComentarios();
+    comentarioSlideIndex = 0; // Reinicia o índice ao redimensionar
+    rotacionarComentarios();
 });
 
 // Atualiza o carrossel automaticamente a cada 8 segundos
@@ -157,6 +157,5 @@ setInterval(rotacionarComentarios, 8000);
 
 // Inicializa o carrossel no carregamento da página
 document.addEventListener('DOMContentLoaded', () => {
-  rotacionarComentarios();
-});
-
+    rotacionarComentarios();
+})
