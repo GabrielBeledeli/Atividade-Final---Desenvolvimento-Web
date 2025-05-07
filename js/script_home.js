@@ -119,3 +119,44 @@ document.addEventListener('DOMContentLoaded', () => {
     updateIndicators();
     updateCarousel();
 });
+
+//comentários
+const comentarioCarousel = document.querySelector('.comentario-carousel');
+const comentarioCards = document.querySelectorAll('.comentario-card');
+let comentarioSlideIndex = 0;
+
+// Função para calcular o número de cards por slide com base no tamanho da tela
+function calcularCardsPorSlide() {
+  const largura = window.innerWidth;
+  if (largura <= 768) return 1; // Telas pequenas
+  if (largura <= 1024) return 2; // Telas médias
+  return 3; // Telas grandes
+}
+
+// Atualiza o carrossel de comentários
+function rotacionarComentarios() {
+  const cardsPorSlide = calcularCardsPorSlide();
+  const totalSlides = Math.ceil(comentarioCards.length / cardsPorSlide);
+
+  // Atualiza o índice do slide
+  comentarioSlideIndex = (comentarioSlideIndex + 1) % totalSlides;
+
+  // Calcula o deslocamento correto
+  const offset = -(comentarioSlideIndex * 100);
+  comentarioCarousel.style.transform = `translateX(${offset}%)`;
+}
+
+// Garante que o carrossel atualize corretamente ao redimensionar
+window.addEventListener('resize', () => {
+  comentarioSlideIndex = 0; // Reinicia o índice ao redimensionar
+  rotacionarComentarios();
+});
+
+// Atualiza o carrossel automaticamente a cada 8 segundos
+setInterval(rotacionarComentarios, 8000);
+
+// Inicializa o carrossel no carregamento da página
+document.addEventListener('DOMContentLoaded', () => {
+  rotacionarComentarios();
+});
+
