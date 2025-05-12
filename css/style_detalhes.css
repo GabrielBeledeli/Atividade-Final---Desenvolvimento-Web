@@ -1,0 +1,184 @@
+/* ===== Estilo da Página de Detalhes do Produto (Estrutura Atual) ===== */
+
+main.detalhes-container {
+    max-width: 1200px;
+    margin: 120px auto 40px auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Layout geral */
+.detalhes-conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.coluna-esquerda,
+.coluna-direita {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Imagem do pneu */
+#detalhe-imagem {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto;
+    border-radius: 10px;
+}
+
+/* Logo da marca */
+#logo-marca {
+    width: 140px;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* Nome do produto */
+#detalhe-nome {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #1D1D1D;
+}
+
+/* Botões informativos */
+.botoes-informativos {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.botoes-informativos button {
+    background-color: #ECECEC;
+    color: #1D1D1D;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: not-allowed;
+    font-size: 0.95rem;
+    font-weight: bold;
+}
+
+/* Preços */
+.preco-container {
+    margin-bottom: 20px;
+}
+
+.preco-pix {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #CF291D;
+}
+
+.preco-parcelado {
+    font-size: 1rem;
+    color: #1D1D1D;
+}
+
+/* Quantidade */
+.quantidade-container {
+    margin-bottom: 20px;
+}
+
+.quantidade-container label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.quantidade-container input {
+    width: 60px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #CCC;
+}
+
+/* Botão principal */
+.btn-carrinho {
+    background-color: #1D1D1D;
+    color: #FFFFFF;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-carrinho:hover {
+    background-color: #CF291D;
+}
+
+/* ===== Detalhes Técnicos ===== */
+.detalhes-tecnicos {
+    margin-top: 40px;
+}
+
+.detalhes-tecnicos h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1D1D1D;
+    border-bottom: 2px solid #CF291D;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+}
+
+/* Estilo da lista técnica */
+#lista-tecnica {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px 20px;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+#lista-tecnica li {
+    background-color: #ECECEC;
+    padding: 10px;
+    border-radius: 5px;
+    color: #1D1D1D;
+}
+
+/* Selo Inmetro */
+.selo-inmetro {
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 768px) {
+    .detalhes-conteudo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .botoes-informativos {
+        justify-content: center;
+    }
+
+    .quantidade-container {
+        text-align: center;
+    }
+
+    .btn-carrinho {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .selo-inmetro {
+        margin-top: 20px;
+    }
+}

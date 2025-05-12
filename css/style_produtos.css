@@ -1,0 +1,118 @@
+/* Seção de produtos - PneusMax */
+
+/* Espaçamento e fundo */
+.produto-secao {
+    margin-top: 3%;
+    background-color: #ECECEC; /* Cinza claro do seu padrão */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.produto-titulo {
+    font-size: 2rem;
+    color: #1D1D1D; /* Preto escuro */
+    margin-bottom: 30px;
+}
+
+/* Grid responsiva */
+.produto-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Card do produto */
+.produto-card {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.produto-img-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: #f9f9f9;
+}
+
+.produto-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Selo: Mais Vendido, Promoção */
+.produto-selo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #CF291D; /* Vermelho escuro */
+    color: #FFFFFF;
+    font-size: 0.75rem;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* Informações do produto */
+.produto-info {
+    padding: 16px;
+    text-align: left;
+}
+
+.produto-avaliacao {
+    color: #FFD700; /* Amarelo para estrelas */
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+}
+
+.produto-nome {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #1D1D1D;
+}
+
+.produto-marca {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.produto-preco {
+    margin-bottom: 12px;
+}
+
+.preco-pix {
+    color: #CF291D;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.preco-parcelado {
+    color: #555;
+    font-size: 0.9rem;
+}
+
+
+/* Botão */
+.produto-botao {
+    display: inline-block;
+    width: 100%;
+    background-color: #CF291D;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.produto-botao:hover {
+    background-color: #e14a3e;
+}

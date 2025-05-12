@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PneusMax - A melhor loja de pneus para você">
+    <title>PneusMax</title>
+    <link rel="stylesheet" href="css/style_home.css">
+    <link rel="stylesheet" href="css/style_produtos.css">
+    <link rel="icon" href="assets/icon1.png" type="image/png">
+</head>
+
+<body>
+    <!-- Header fixo -->
+    <header>
+        <div class="header-container">
+            <!-- Logo à esquerda -->
+            <img src="assets/logo1.png" alt="PneusMax" class="logo">
+
+            <!-- Botão hambúrguer para dispositivos móveis -->
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+
+            <!-- Menu de navegação principal -->
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="index_home.html">Início</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="index_contato.html">Contato</a></li>
+                </ul>
+            </nav>
+
+            <!-- Links de conta e ações do usuário -->
+            <div class="user-actions">
+                <a href="index_login.html">Entrar</a>
+                <a href="index_registro.html">Criar conta</a>
+                <a href="#carrinho">Carrinho</a>
+            </div>
+        </div>
+
+        <!-- Menu de navegação para dispositivos móveis -->
+        <nav id="mobileMenu" class="mobile-menu">
+            <ul>
+                <hr>
+                <li><a href="index_home.html">Início</a></li>
+                <hr>
+                <li><a href="#produtos">Produtos</a></li>
+                <hr>
+                <li><a href="index_contato.html">Contato</a></li>
+                <hr>
+                <li><a href="index_login.html">Entrar</a></li>
+                <hr>
+                <li><a href="index_registro.html">Criar conta</a></li>
+                <hr>
+                <li><a href="#carrinho">Carrinho</a></li>
+                <hr>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Grid Produtos -->
+    <section id="produtos" class="produto-secao">
+        <h2 class="produto-titulo">Nossos Pneus</h2>
+        <div class="produto-grid">
+            <!-- Os cards serão inseridos aqui via JS -->
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="social-icons">
+                <a href="#"><img src="assets/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="assets/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="assets/whatsapp.png" alt="Whatsapp"></a>
+            </div>
+            <p>© 2025 PneusMax. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/script_home.js"></script>
+    <script src="js/script_produtos.js"></script>
+    <script src="js/script_grid_produtos.js"></script>
+</body>
+
+</html>
