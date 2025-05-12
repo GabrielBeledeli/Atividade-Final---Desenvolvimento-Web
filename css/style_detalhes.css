@@ -1,6 +1,7 @@
 /* ===== Estilo da Página de Detalhes do Produto (Estrutura Atual) ===== */
 
 main.detalhes-container {
+    width: 1100px;
     max-width: 1200px;
     margin: 120px auto 40px auto;
     padding: 20px;
@@ -21,6 +22,7 @@ main.detalhes-container {
 .coluna-direita {
     flex: 1;
     min-width: 300px;
+    margin-left: 50px;
 }
 
 /* Imagem do pneu */
@@ -151,7 +153,7 @@ main.detalhes-container {
 
 /* Selo Inmetro */
 .selo-inmetro {
-    width: 100px;
+    width: 200px;
     display: block;
     margin: 0 auto;
 }
