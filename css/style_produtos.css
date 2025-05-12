@@ -116,3 +116,18 @@
 .produto-botao:hover {
     background-color: #e14a3e;
 }
+.btn-ver-produtos {
+    background-color: #CF291D; /* vermelho escuro da sua paleta */
+    color: white;
+    margin-top: 2%;
+    padding: 12px 24px;
+    font-size: 22px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-ver-produtos:hover {
+    background-color: #a32018; /* tom mais escuro no hover */
+}
