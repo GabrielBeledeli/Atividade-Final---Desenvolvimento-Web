@@ -45,3 +45,31 @@ window.onload = function () {
     <li><strong>Garantia:</strong> ${produto.garantia}</li>
   `;
 };
+
+// Obtém o ID do produto da URL
+const urlParams = new URLSearchParams(window.location.search);
+const idProduto = parseInt(urlParams.get("id"));
+
+// Encontra o produto no array com base no ID
+const produto = produtos.find(p => p.id === idProduto);
+
+// Verifica se o produto existe e adiciona o evento ao botão
+if (produto) {
+  const botao = document.querySelector(".btn-carrinho");
+
+  botao.addEventListener("click", () => {
+    let carrinho = JSON.parse(sessionStorage.getItem("carrinho")) || [];
+
+    // Adiciona apenas se o produto ainda não estiver no carrinho
+    if (!carrinho.includes(produto.id)) {
+      carrinho.push(produto.id);
+      sessionStorage.setItem("carrinho", JSON.stringify(carrinho));
+      alert("Produto adicionado ao carrinho!");
+    } else {
+      alert("Este produto já está no carrinho!");
+    }
+
+    // Redireciona para o carrinho
+    window.location.href = "index_carrinho.html";
+  });
+}

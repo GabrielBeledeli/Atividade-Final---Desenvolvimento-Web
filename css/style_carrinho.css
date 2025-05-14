@@ -1,0 +1,319 @@
+/* Estilo geral para a tela do carrinho */
+.carrinho-container {
+    margin-top: 50px;
+    display: flex;
+    padding: 50px;
+    gap: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.carrinho-produtos {
+    flex: 2;
+    padding-right: 30px;
+}
+
+.produto-item {
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.produto-item:hover {
+    transform: scale(1.03); /* Efeito de destaque ao passar o mouse */
+}
+
+.produto-item img {
+    width: 20%;
+    margin-right: 50px;
+}
+
+.produto-dados {
+    flex-grow: 1;
+}
+
+.produto-dados h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #1D1D1D;
+}
+
+.quantidade {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.btn-quantidade {
+    background-color: #A21A12;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-quantidade:hover {
+    background-color: #CF291D;
+}
+
+.numero-quantidade {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    min-width: 30px;
+}
+
+/* Estilo para os preços dentro do carrinho */
+.precos p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1D1D1D;
+    margin: 10px 0;
+}
+
+#total-vista,
+#total-parcelado {
+    font-size: 24px;
+    color: #CF291D;
+    font-weight: bold;
+}
+
+/* Estilo para a parte de preço à vista e parcelado em cada produto */
+.produto-item .preco-vista,
+.produto-item .preco-prazo {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1D1D1D;
+    margin-top: 10px;
+}
+
+.preco-vista strong,
+.preco-prazo strong {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.preco-vista strong {
+    color: #CF291D;
+}
+
+.preco-prazo strong {
+    color: #A21A12;
+}
+
+/* Estilo para o botão "Remover" */
+.btn-remover {
+    background-color: #CF291D;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-remover:hover {
+    background-color: #A21A12;
+}
+
+/* Estilos para o campo de preço total no resumo */
+.carrinho-resumo {
+    flex: 1;
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    height: fit-content;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 20px;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* Estilo para o botão de "Finalizar Compra" */
+.btn-comprar {
+    width: 100%;
+    background-color: #CF291D;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: not-allowed;
+    transition: background-color 0.3s ease;
+}
+
+.btn-comprar:hover {
+    background-color: #A21A12;
+}
+
+/* Estilos para o carrinho vazio */
+#carrinho-vazio {
+    padding: 80px;
+    text-align: center;
+    border-radius: 12px;
+    margin-top: 50px;
+}
+
+#carrinho-vazio h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1D1D1D;
+}
+
+#carrinho-vazio .btn-voltar {
+    display: inline-block;
+    margin-top: 30px;
+    background-color: #CF291D;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+#carrinho-vazio .btn-voltar:hover {
+    background-color: #A21A12;
+}
+
+/* Media Queries para Responsividade */
+
+/* Tela pequena (mobile) */
+@media (max-width: 768px) {
+    .carrinho-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .carrinho-produtos {
+        flex: none;
+        margin-bottom: 20px;
+    }
+
+    .produto-item {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .produto-item img {
+        width: 120px;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .produto-dados h3 {
+        font-size: 18px;
+    }
+
+    .quantidade {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .numero-quantidade {
+        font-size: 16px;
+    }
+
+    .carrinho-resumo {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .btn-quantidade {
+        padding: 8px;
+    }
+
+    .btn-remover {
+        padding: 8px 12px;
+    }
+
+    .precos p {
+        font-size: 16px;
+    }
+
+    .btn-comprar {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
+
+/* Tela média (tablets) */
+@media (max-width: 1024px) {
+    .carrinho-container {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .carrinho-produtos {
+        flex: none;
+        margin-bottom: 30px;
+    }
+
+    .produto-item {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .produto-item img {
+        width: 130px;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .produto-dados h3 {
+        font-size: 19px;
+    }
+
+    .quantidade {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .numero-quantidade {
+        font-size: 17px;
+    }
+
+    .carrinho-resumo {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .btn-quantidade {
+        padding: 10px;
+    }
+
+    .btn-remover {
+        padding: 10px 14px;
+    }
+
+    .precos p {
+        font-size: 18px;
+    }
+
+    .btn-comprar {
+        font-size: 17px;
+        padding: 14px;
+    }
+}

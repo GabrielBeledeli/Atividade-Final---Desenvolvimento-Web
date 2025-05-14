@@ -7,7 +7,7 @@
     <meta name="description" content="PneusMax - A melhor loja de pneus para você">
     <title>PneusMax</title>
     <link rel="stylesheet" href="css/style_home.css">
-    <link rel="stylesheet" href="css/style_detalhes.css">
+    <link rel="stylesheet" href="css/style_carrinho.css">
     <link rel="icon" href="assets/icon1.png" type="image/png">
 </head>
 
@@ -63,43 +63,10 @@
         </nav>
     </header>
 
-    <!-- Detalhes do Produto -->
-    <main class="detalhes-container">
-        <div class="detalhes-conteudo">
-            <div class="coluna-esquerda">
-                <img id="detalhe-imagem" src="" alt="Imagem do Pneu">
-            </div>
+    <!-- Carrinho de Compras -->
+    <div class="container-carrinho"></div>
 
-            <div class="coluna-direita">
-                <img id="logo-marca" src="" alt="Logo da Marca">
-                <h1 id="detalhe-nome"></h1>
 
-                <div class="botoes-informativos">
-                    <button disabled>Veículos que utilizam</button>
-                    <button disabled>Consultar com fabricante</button>
-                </div>
-
-                <div class="preco-container">
-                    <p id="preco-a-vista" class="preco-pix"></p>
-                    <p id="preco-parcelado" class="preco-parcelado"></p>
-                </div>
-
-                <div class="quantidade-container">
-                    <label for="quantidade">Quantidade:</label>
-                    <input type="number" id="quantidade" min="1" value="1">
-                </div>
-
-                <button class="btn-carrinho">Adicionar ao Carrinho</button>
-            </div>
-        </div>
-
-        <section class="detalhes-tecnicos">
-            <h2>Detalhes Técnicos</h2>
-            <ul id="lista-tecnica"></ul>
-            <img id="selo-inmetro" src="" alt="Selo Inmetro" class="selo-inmetro">
-        </section>
-    </main>
-      
     <!-- Footer -->
     <footer>
         <div class="footer-container">
@@ -114,7 +81,7 @@
 
     <script src="js/script_home.js"></script>
     <script src="js/script_produtos.js"></script>
-    <script src="js/script_detalhes_produto.js"></script>
+    <script src="js/script_carrinho.js"></script>
 </body>
 
 </html>
