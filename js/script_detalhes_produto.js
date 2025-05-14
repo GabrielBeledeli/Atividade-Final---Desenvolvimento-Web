@@ -64,7 +64,7 @@ if (produto) {
     if (!carrinho.includes(produto.id)) {
       carrinho.push(produto.id);
       sessionStorage.setItem("carrinho", JSON.stringify(carrinho));
-      alert("Produto adicionado ao carrinho!");
+
     } else {
       alert("Este produto já está no carrinho!");
     }

@@ -40,7 +40,7 @@ main.detalhes-container {
     width: 140px;
     height: auto;
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 /* Nome do produto */
@@ -56,12 +56,12 @@ main.detalhes-container {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .botoes-informativos button {
-    background-color: #ECECEC;
-    color: #1D1D1D;
+    background-color: #cf291d;
+    color: #FFFFFF;
     border: none;
     padding: 10px 15px;
     border-radius: 6px;
@@ -72,7 +72,7 @@ main.detalhes-container {
 
 /* Preços */
 .preco-container {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .preco-pix {
@@ -86,35 +86,37 @@ main.detalhes-container {
     color: #1D1D1D;
 }
 
-/* Quantidade */
-.quantidade-container {
-    margin-bottom: 20px;
-}
-
-.quantidade-container label {
-    font-weight: bold;
-    margin-right: 10px;
-}
-
-.quantidade-container input {
-    width: 60px;
-    padding: 5px;
-    border-radius: 5px;
-    border: 1px solid #CCC;
-}
-
 /* Botão principal */
 .btn-carrinho {
+    display: inline-flex;
+    /* Torna o botão flexível */
+    align-items: center;
+    /* Alinha verticalmente ao centro */
+    justify-content: center;
+    /* Alinha horizontalmente ao centro */
     background-color: #1D1D1D;
     color: #FFFFFF;
-    padding: 12px 20px;
+    padding: 12px 40px;
     border: none;
     border-radius: 8px;
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s;
+    position: relative;
+    gap: 10px;
+    /* Espaço entre texto e ícone */
 }
+
+.btn-carrinho::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-image: url('/assets/carrinho.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 
 .btn-carrinho:hover {
     background-color: #CF291D;
@@ -182,5 +184,95 @@ main.detalhes-container {
 
     .selo-inmetro {
         margin-top: 20px;
+    }
+}
+
+/* 💻 Tablet médio de 769px a 1024px */
+@media (min-width: 769px) and (max-width: 1130px) {
+    main.detalhes-container {
+        width: 90%;
+        margin: 100px auto 30px auto;
+        padding: 15px;
+    }
+
+    .detalhes-conteudo {
+        gap: 20px;
+    }
+
+    .coluna-esquerda,
+    .coluna-direita {
+        margin-left: 20px;
+    }
+
+    #detalhe-imagem {
+        max-width: 350px;
+    }
+
+    .botoes-informativos button {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+
+    .btn-carrinho {
+        max-width: 250px;
+    }
+
+    .selo-inmetro {
+        width: 180px;
+    }
+}
+
+/* 📱 Mobile até 768px */
+@media (max-width: 768px) {
+    main.detalhes-container {
+        width: 95%;
+        margin: 80px auto 20px auto;
+        padding: 10px;
+    }
+
+    .detalhes-conteudo {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .coluna-esquerda,
+    .coluna-direita {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #detalhe-imagem {
+        max-width: 300px;
+    }
+
+    #logo-marca {
+        width: 120px;
+    }
+
+    #detalhe-nome {
+        font-size: 1.4rem;
+    }
+
+    .botoes-informativos {
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .botoes-informativos button {
+        padding: 6px 10px;
+        font-size: 0.85rem;
+    }
+
+    .btn-carrinho {
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .selo-inmetro {
+        width: 160px;
+        margin-top: 15px;
     }
 }

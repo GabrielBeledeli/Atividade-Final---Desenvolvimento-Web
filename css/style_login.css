@@ -1,7 +1,8 @@
 /* Login e Registro */
 .container {
     width: 370px;
-    margin: 140px auto; /* Ajuste para melhor alinhamento */
+    margin: 140px auto;
+    /* Ajuste para melhor alinhamento */
     background: rgba(20, 20, 20, 0.9);
     padding: 30px;
     border-radius: 10px;
@@ -27,7 +28,7 @@ input {
 /* Esqueceu a senha */
 .forgot-password {
     display: block;
-    color: #CF291D; 
+    color: #CF291D;
     text-decoration: none;
     margin-top: 10px;
 }
@@ -41,7 +42,8 @@ input {
     margin-top: 20px;
 }
 
-.google-login, .apple-login {
+.google-login,
+.apple-login {
     width: 100%;
     padding: 12px;
     margin: 5px 0;
@@ -68,7 +70,8 @@ input {
 }
 
 /* Ajuste dos ícones nos botões */
-.google-login img, .apple-login img {
+.google-login img,
+.apple-login img {
     width: 26px;
     height: 26px;
 }
@@ -90,7 +93,8 @@ input {
     color: white;
 }
 
-.register-btn, .btn_entrar {
+.register-btn,
+.btn_entrar {
     display: inline-block;
     background-color: #CF291D;
     color: white;
@@ -101,9 +105,11 @@ input {
     transition: background-color 0.3s ease-in-out;
 }
 
-.register-btn:hover, .btn_entrar:hover {
+.register-btn:hover,
+.btn_entrar:hover {
     background-color: #A32117;
 }
+
 @media (max-width: 768px) {
 
     .container {

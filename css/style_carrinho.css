@@ -24,7 +24,8 @@
 }
 
 .produto-item:hover {
-    transform: scale(1.03); /* Efeito de destaque ao passar o mouse */
+    transform: scale(1.03);
+    /* Efeito de destaque ao passar o mouse */
 }
 
 .produto-item img {
@@ -199,8 +200,6 @@
 }
 
 /* Media Queries para Responsividade */
-
-/* Tela pequena (mobile) */
 @media (max-width: 768px) {
     .carrinho-container {
         flex-direction: column;
@@ -259,7 +258,6 @@
     }
 }
 
-/* Tela média (tablets) */
 @media (max-width: 1024px) {
     .carrinho-container {
         flex-direction: column;

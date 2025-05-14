@@ -28,7 +28,8 @@ input {
     margin-top: 20px;
 }
 
-.google-register, .apple-register {
+.google-register,
+.apple-register {
     width: 100%;
     padding: 12px;
     margin: 5px 0;
@@ -55,7 +56,8 @@ input {
 }
 
 /* Ícones nos botões */
-.google-register img, .apple-register img {
+.google-register img,
+.apple-register img {
     width: 25px;
     height: 25px;
 }
@@ -101,16 +103,25 @@ input {
 }
 
 #registrarBtn {
-    background-color: #CF291D; /* Cor de fundo */
-    color: white; /* Cor do texto */
-    border: none; /* Remover borda */
-    border-radius: 5px; /* Bordas arredondadas */
-    padding: 10px 20px; /* Espaçamento interno */
-    font-size: 16px; /* Tamanho da fonte */
-    cursor: pointer; /* Cursor de ponteiro */
-    transition: background-color 0.3s ease; /* Transição suave */
+    background-color: #CF291D;
+    /* Cor de fundo */
+    color: white;
+    /* Cor do texto */
+    border: none;
+    /* Remover borda */
+    border-radius: 5px;
+    /* Bordas arredondadas */
+    padding: 10px 20px;
+    /* Espaçamento interno */
+    font-size: 16px;
+    /* Tamanho da fonte */
+    cursor: pointer;
+    /* Cursor de ponteiro */
+    transition: background-color 0.3s ease;
+    /* Transição suave */
 }
 
 #registrarBtn:hover {
-    background-color: #A32117; /* Cor ao passar o mouse */
+    background-color: #A32117;
+    /* Cor ao passar o mouse */
 }
