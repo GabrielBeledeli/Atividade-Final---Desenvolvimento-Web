@@ -1,10 +1,13 @@
+// Seleciona o container onde os cards dos produtos serão inseridos
 const container = document.querySelector(".produto-grid");
 
-// Limitar para 12 produtos
+// Limita a exibição para 12 produtos (do índice 1 ao 12 do array)
 produtos.slice(1, 13).forEach(produto => {
+    // Cria um elemento div para o card do produto
     const card = document.createElement("div");
     card.classList.add("produto-card");
 
+    // Define o conteúdo HTML do card, incluindo imagem, selo, avaliação, nome, marca, preços e botão de detalhes
     card.innerHTML = `
         <div class="produto-img-container">
             <img src="${produto.imagem}" alt="${produto.nome}" class="produto-img">
@@ -24,5 +27,6 @@ produtos.slice(1, 13).forEach(produto => {
         </div>
     `;
 
+    // Adiciona o card criado ao container na página
     container.appendChild(card);
 });

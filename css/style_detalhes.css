@@ -112,7 +112,7 @@ main.detalhes-container {
     content: "";
     width: 30px;
     height: 30px;
-    background-image: url('/assets/carrinho.png');
+    background-image: url('../assets/carrinho.png');
     background-size: contain;
     background-repeat: no-repeat;
 }

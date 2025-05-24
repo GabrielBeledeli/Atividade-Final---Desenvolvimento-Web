@@ -1,9 +1,13 @@
+// Seleciona o container onde os cards dos produtos serão inseridos
 const container = document.querySelector(".produto-grid");
 
+// Percorre o array de produtos e cria um card para cada produto
 produtos.forEach(produto => {
+  // Cria um elemento div para o card do produto
   const card = document.createElement("div");
   card.classList.add("produto-card");
 
+  // Define o conteúdo HTML do card, incluindo imagem, selo, avaliação, nome, marca, preços e botão de detalhes
   card.innerHTML = `
     <div class="produto-img-container">
       <img src="${produto.imagem}" alt="${produto.nome}" class="produto-img">
@@ -23,5 +27,6 @@ produtos.forEach(produto => {
     </div>
   `;
 
+  // Adiciona o card criado ao container na página
   container.appendChild(card);
 });

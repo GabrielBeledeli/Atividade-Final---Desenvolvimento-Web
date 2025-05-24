@@ -101,7 +101,7 @@ header {
     display: inline-block;
     width: 25px;
     height: 25px;
-    background-image: url('/assets/carrinho.png');
+    background-image: url('../assets/carrinho.png');
     background-size: contain;
     background-repeat: no-repeat;
     vertical-align: middle;
