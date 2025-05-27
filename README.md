@@ -28,7 +28,7 @@ A organização do projeto segue uma estrutura clara para facilitar a navegaçã
 ```bash
 /
 ├── assets/                 # Ícones, logos e imagens de banners
-├── images/             # Imagens de produtos, marcas e selos
+├── images/                 # Imagens de produtos, marcas e selos
 ├── css/                    # Arquivos de estilos (CSS)
 ├── js/                     # Scripts JavaScript
 ├── index_home.html         # Página inicial
@@ -73,7 +73,7 @@ Para visualizar e interagir com a PneusMAX Store, siga os passos abaixo:
 ## 👨‍💻 Autores
 
 * **Nomes:** Gabriel Beledeli Hul; Caio Eduardo Gemin Guarienti
-* **Curso:** Engenharia de Software 3
+* **Curso:** Engenharia de Software
 * **Disciplina:** Desenvolvimento de Sistemas para Web/Mobile I
 * **Ano:** 2025
 
