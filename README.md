@@ -1,9 +1,8 @@
-# PneusMAX Store
 ![Logo](assets/logo3.png)
 
 ---
 
-**PneusMAX Store** é uma loja virtual fictícia de pneus, desenvolvida como projeto final para a disciplina de Desenvolvimento Web. O objetivo principal é simular uma experiência de e-commerce moderna, responsiva e intuitiva, com funcionalidades completas para navegação, consulta de produtos, registro, login e gerenciamento de carrinho de compras.
+**PneusMAX Store** é uma loja virtual fictícia de pneus, desenvolvida como projeto final para a disciplina de Desenvolvimento de Sistemas para Web/Mobile I. O objetivo principal é simular uma experiência de e-commerce moderna, responsiva e intuitiva, com funcionalidades completas para navegação, consulta de produtos, registro, login e gerenciamento de carrinho de compras.
 
 ---
 
@@ -75,5 +74,7 @@ Para visualizar e interagir com a PneusMAX Store, siga os passos abaixo:
 
 * **Nomes:** Gabriel Beledeli Hul; Caio Eduardo Gemin Guarienti
 * **Curso:** Engenharia de Software 3
-* **Disciplina:** Desenvolvimento Web/Mobile I
+* **Disciplina:** Desenvolvimento de Sistemas para Web/Mobile I
 * **Ano:** 2025
+
+---
