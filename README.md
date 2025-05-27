@@ -78,3 +78,5 @@ Para visualizar e interagir com a PneusMAX Store, siga os passos abaixo:
 * **Ano:** 2025
 
 ---
+
+**Sinta-se à vontade para explorar, testar e adaptar o PneusMAX!** 🚗🛞
